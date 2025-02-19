@@ -1,0 +1,15 @@
+pydantic-ai>=0.0.24
+requests
+gradio
+python-dotenv
+langchain-chroma
+langchain-huggingface
+chromadb
+sentence-transformers
+langchain-chroma==0.2.1
+langchain-community==0.3.16
+langchain-core==0.3.33
+langchain-huggingface==0.1.2
+pypdf==5.2.0
+streamlit==1.41.1
+toml
