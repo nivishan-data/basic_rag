@@ -12,30 +12,30 @@ graph TB
         subgraph RAG["RAG Engine"]
             PA[Primary Agent]
             RA[Reasoning Agent]
-            style PA fill:#FFB6C1
-            style RA fill:#FFB6C1
+            style PA fill:#A52A2A
+            style RA fill:#A52A2A
         end
         
         subgraph Models["AI Models"]
             LLM[Local Ollama LLM]
             EMB[HuggingFace Embeddings]
-            style LLM fill:#ADD8E6
-            style EMB fill:#ADD8E6
+            style LLM fill:#A52A2A
+            style EMB fill:#A52A2A
         end
         
         subgraph Ingestion["PDF Processing"]
             PL[PDF Loader]
             TS[Text Splitter]
-            style PL fill:#DDA0DD
-            style TS fill:#DDA0DD
+            style PL fill:#A52A2A
+            style TS fill:#A52A2A
         end
     end
 
     subgraph Storage["Storage Layer"]
         VDB[(ChromaDB<br/>Vector Store)]
         PDFs[(PDF Files)]
-        style VDB fill:#FFE4B5
-        style PDFs fill:#FFE4B5
+        style VDB fill:#A52A2A
+        style PDFs fill:#A52A2A
     end
 
     %% Frontend to Processing connections
@@ -64,7 +64,7 @@ sequenceDiagram
     participant LLM as Ollama LLM
 
     %% PDF Ingestion Flow
-    rect rgb(200, 220, 240)
+    rect rgb(165, 42, 42)
         Note over User,LLM: Document Ingestion Process
         User->>ST: Upload PDF
         ST->>VDB: Process Document
@@ -75,7 +75,7 @@ sequenceDiagram
     end
 
     %% Query Flow
-    rect rgb(220, 240, 200)
+    rect rgb(165, 42, 42)
         Note over User,LLM: Query Process
         User->>ST: Submit Question
         ST->>PA: Forward Query
