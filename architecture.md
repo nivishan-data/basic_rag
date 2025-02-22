@@ -5,7 +5,7 @@
 graph TB
     subgraph Frontend["Frontend Layer"]
         ST[Streamlit UI]
-        style ST fill:#90EE90
+        style ST fill:#A52A2A
     end
 
     subgraph Processing["Processing Layer"]
