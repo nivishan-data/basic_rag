@@ -24,19 +24,23 @@ Document Q&A Bot is a Retrieval-Augmented Generation (RAG) application that allo
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your_username/your_repository_name.git
-   cd your_repository_name
+   git clone https://github.com/nivishan-data/basic_rag.git
+   cd basic_rag
 
 2. **Create and Activate a Virtual Environment:**
-
+    ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    source venv/bin/activate  # On Windows: env\Scripts\activate
 
 3. **Install Dependencies:**
 
+    ```bash
     pip install -r requirements.txt
 
 4. **Configure Environment Variables:**
+
+    Create a .env file inside the directory and paste below.
+    ```bash
     REASONING_MODEL_ID=deepseek-r1:7b-8k
     TOOL_MODEL_ID=llama3.2:latest
 
