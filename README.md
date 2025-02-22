@@ -45,7 +45,9 @@ Document Q&A Bot is a Retrieval-Augmented Generation (RAG) application that allo
     TOOL_MODEL_ID=llama3.2:latest
 
 5. **Populate the Vector Store:**
-    Ensure that your vector store (e.g., the chroma_db2 directory) is populated with document data. Use your ingestion script (e.g., ingest.py) to load and process your PDFs if needed.
+    Ensure that your vector store (e.g., the chroma_db2 directory) is populated with document data. Use your ingestion script to load and process your PDFs if needed.
+    ```bash
+    python ingest_pdf.py
 
 6. **Running the Streamlit App**
     1. streamlit run streamlit_app.py or venv/bin/streamlit run streamlit_app.py
